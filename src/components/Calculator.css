@@ -1,0 +1,107 @@
+/* Calculator.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.complete-operation {
+  font-size: 1.5rem;
+  color: #fff;
+  background: linear-gradient(135deg, #6e7cdb, #4a56e2);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: right;
+  margin-bottom: 15px;
+  min-height: 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+  transition: all 0.3s ease; 
+  overflow-x: auto; /* Modificado para permitir rolagem horizontal */
+  white-space: nowrap; /* Impede quebra de linha */
+}
+
+.complete-operation:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
+  transform: scale(1.05); 
+}
+
+.complete-operation span {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+
+
+.display {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  width: 93%;
+  text-align: right;
+  padding: 10px;
+  background-color: #eaeaea;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow-x: auto; /* Modificado para permitir rolagem horizontal */
+  white-space: nowrap; /* Impede quebra de linha */
+}
+
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  padding: 15px 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background-color: #d5d5d5;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+button:nth-child(1) {
+  background-color: #ff8a80;
+  color: #fff;
+  font-weight: bold;
+}
+
+button:nth-child(1):hover {
+  background-color: #ff5252;
+}
+
+/* Botão = (Verde, ocupa a largura inteira) */
+button:last-child {
+  background-color: #4caf50; /* Cor verde */
+  color: #fff;
+  font-weight: bold;
+  grid-column: span 4; /* Faz o botão ocupar toda a largura da tela */
+}
+
+
+button:last-child:hover {
+  background-color: #388e3c;
+}
