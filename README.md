@@ -1,12 +1,28 @@
-# React + Vite
+# Calculadora Interativa
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto de uma **calculadora interativa** implementada com **React**. A aplicação permite realizar operações matemáticas básicas como **adição, subtração, multiplicação** e **divisão**, além de suportar entradas via teclado físico. Seu design é simples e intuitivo, ideal para fins de aprendizado e aprimoramento de habilidades com React.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Operações Matemáticas**: Realiza operações básicas de soma, subtração, multiplicação e divisão.
+- **Teclado Virtual**: Permite a inserção de números e operações diretamente na interface.
+- **Entrada por Teclado**: Suporta a realização de operações com o teclado físico, incluindo números, operações, backspace e enter.
+- **Operação de Backspace**: Permite excluir o último número ou operação digitada.
+- **Operação de Limpeza (AC)**: Limpa todas as entradas e retorna o visor ao estado inicial.
+- **Resultado da Operação**: Exibe o cálculo completo junto ao resultado final.
+- **Verificação de Erros**: Em caso de divisão por zero, exibe uma mensagem de erro informativa.
 
-## Expanding the ESLint configuration
+## Tecnologias Utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React**: Biblioteca JavaScript para construção da interface de usuário.
+- **CSS**: Estilização básica da calculadora.
+- **Hooks (useState, useEffect)**: Gerenciamento do estado da aplicação e manipulação dos eventos de teclado.
+
+## Como Usar
+
+### Instalação
+
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/EribaldoOliveira/Calculadora_React.git
