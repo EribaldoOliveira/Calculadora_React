@@ -1,4 +1,5 @@
 # Calculadora Interativa
+![image](https://github.com/user-attachments/assets/69fd0e69-f7d1-4d78-960b-f80885b5c202)
 
 Este é um projeto de uma **calculadora interativa** implementada com **React**. A aplicação permite realizar operações matemáticas básicas como **adição, subtração, multiplicação** e **divisão**, além de suportar entradas via teclado físico. Seu design é simples e intuitivo, ideal para fins de aprendizado e aprimoramento de habilidades com React.
 
