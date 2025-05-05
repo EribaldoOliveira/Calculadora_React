@@ -111,7 +111,13 @@ const Calculator = () => {
 
   return (
     <div className="calculator">
-      <div className="complete-operation">{completeOperation}</div>
+  <h2>Calculadora React</h2>
+  <h4 className="dev-signature">Dev. React: Eribaldo Oliveira</h4>
+  <div className="complete-operation">
+    <span>{completeOperation}</span>
+   
+  </div>
+
       <div className="display">{currentValue}</div>
       <div className="buttons">
         <button onClick={handleClear}>AC</button>
@@ -132,6 +138,7 @@ const Calculator = () => {
         <button onClick={handleCalculate}>=</button>
       </div>
     </div>
+    
   );
 };
 

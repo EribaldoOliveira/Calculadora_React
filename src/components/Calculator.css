@@ -16,6 +16,16 @@ body {
   width: 320px;
   padding: 20px;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column; /* Disposição vertical */
+  justify-content: flex-start; /* Garante que os itens fiquem alinhados ao topo */
+}
+
+h2 {
+  text-align: center; /* Centraliza o texto horizontalmente */
+  margin: 0; /* Remove a margem padrão */
+  font-size: 1.5rem; /* Ajuste o tamanho da fonte se necessário */
+  color: #333; /* Cor do texto */
 }
 
 .complete-operation {
@@ -27,10 +37,22 @@ body {
   text-align: right;
   margin-bottom: 15px;
   min-height: 50px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
-  transition: all 0.3s ease; 
-  overflow-x: auto; /* Modificado para permitir rolagem horizontal */
-  white-space: nowrap; /* Impede quebra de linha */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column; 
+}
+
+.dev-signature {
+  font-size: 0.9rem; /* Ajuste o tamanho da fonte conforme necessário */
+  color: green; /* Cor suave */
+  margin-top: 0px; Remove margem extra no topo
+  margin-bottom: 0px; /* Dá um pequeno espaço entre o texto e a próxima parte */
+  font-style: italic; 
+  align-self: flex-start; 
+  padding-left:20%;
 }
 
 .complete-operation:hover {
@@ -42,8 +64,6 @@ body {
   font-weight: bold;
   font-size: 1.6rem;
 }
-
-
 
 .display {
   font-size: 2rem;
@@ -104,4 +124,22 @@ button:last-child {
 
 button:last-child:hover {
   background-color: #388e3c;
+}
+
+footer h2{
+  margin: 2px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.equal-button {
+  grid-column: span 4;
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
